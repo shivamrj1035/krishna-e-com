@@ -1,0 +1,83 @@
+:root {
+  --primary-navy: #041527;
+  --secondary-navy: #0A244A;
+  --accent-gold: #CAA958;
+  --accent-light-gold: #E8C974;
+  --bg-ivory: #FDFBF7;
+  --bg-card: #FFFFFF;
+  --text-dark: #2D3748;
+  --text-dim: #718096;
+  --text-light: #FFFFFF;
+  
+  --status-delivered: #48BB78;
+  --status-processing: #4299E1;
+  --status-shipped: #ECC94B;
+  --status-pending: #ED8936;
+  --status-cancelled: #F56565;
+  
+  --sidebar-width: 260px;
+  --admin-bg: #F0F2F5;
+  
+  --background: var(--bg-ivory);
+  --foreground: var(--text-dark);
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 8px 32px rgba(10, 61, 98, 0.08);
+}
+
+/* Premium Gradients */
+.peacock-gradient {
+  background: linear-gradient(135deg, var(--primary-blue), var(--secondary-green));
+}
+
+.gold-gradient-text {
+  background: linear-gradient(to right, #B8860B, #8B6508);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-border {
+  border: 1px solid rgba(184, 134, 11, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.animate-fade {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.animate-slide {
+  animation: slideUp 0.8s ease-out forwards;
+}

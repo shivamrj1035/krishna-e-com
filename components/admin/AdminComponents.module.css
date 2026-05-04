@@ -1,0 +1,154 @@
+.statsCard {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.statsIconBox {
+  width: 54px;
+  height: 54px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.statsTitle {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+
+.statsValue {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  margin-bottom: 0.25rem;
+}
+
+.statsTrend {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.trendUp {
+  color: #48BB78;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 700;
+}
+
+.trendDown {
+  color: #F56565;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-weight: 700;
+}
+
+.trendPeriod {
+  color: #A0AEC0;
+}
+
+/* Chart Box */
+.chartBox {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  height: 100%;
+}
+
+.chartHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.chartHeader h3 {
+  font-size: 1.1rem;
+  color: var(--primary-navy);
+  font-weight: 700;
+}
+
+.chartSelect {
+  padding: 0.4rem 0.8rem;
+  border-radius: 8px;
+  border: 1px solid #E2E8F0;
+  font-size: 0.8rem;
+  color: #4A5568;
+  outline: none;
+}
+
+/* Pie Container */
+.pieContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pieWrapper {
+  position: relative;
+}
+
+.pieCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pieTotal {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary-navy);
+  line-height: 1;
+}
+
+.pieLabel {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.pieLegend {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.legendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.legendName {
+  flex: 1;
+  color: #4A5568;
+}
+
+.legendValue {
+  font-weight: 600;
+  color: var(--primary-navy);
+}

@@ -1,0 +1,267 @@
+.footerWrapper {
+  width: 100%;
+}
+
+.instagramSection {
+  background-color: var(--primary-navy);
+  color: white;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.instaHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.instaHeader h2 {
+  font-family: var(--font-playfair);
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.instagramSection p {
+  color: #A0AEC0;
+  margin-bottom: 1.5rem;
+  font-size: 0.9rem;
+}
+
+.instaGrid {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto 2.5rem;
+}
+
+.instaItem {
+  width: 160px;
+  height: 160px;
+  background: rgba(255,255,255,0.05);
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.instaItem:hover {
+  transform: translateY(-5px);
+}
+
+.instaIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
+  border-radius: 50%;
+  display: flex;
+}
+
+.followBtn {
+  background: transparent;
+  border: 1px solid var(--accent-gold);
+  color: var(--accent-gold);
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s;
+}
+
+.followBtn:hover {
+  background: var(--accent-gold);
+  color: var(--primary-navy);
+}
+
+.featuresBar {
+  background: var(--bg-ivory);
+  padding: 2rem 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.featureIcon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(202, 169, 88, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature h4 {
+  color: var(--text-dark);
+  font-size: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+.feature p {
+  color: var(--text-dim);
+  font-size: 0.85rem;
+}
+
+.mainFooter {
+  background: var(--primary-navy);
+  color: white;
+  padding: 3rem 2rem 1.5rem;
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1.5fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.logoTitle {
+  font-size: 1.4rem;
+  color: var(--accent-gold);
+  letter-spacing: 2px;
+  line-height: 1;
+}
+
+.logoSubtitle {
+  font-size: 0.6rem;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.brandDesc {
+  color: #A0AEC0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  max-width: 250px;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.socials button:hover {
+  background: var(--accent-gold);
+  border-color: var(--accent-gold);
+  color: var(--primary-navy);
+}
+
+.footerLinks h4, .footerContact h4 {
+  color: white;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  font-family: var(--font-playfair);
+}
+
+.footerLinks a {
+  display: block;
+  color: #A0AEC0;
+  text-decoration: none;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.footerLinks a:hover {
+  color: var(--accent-gold);
+}
+
+.footerContact p {
+  color: #A0AEC0;
+  margin-bottom: 0.8rem;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.copyright {
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  color: #A0AEC0;
+  font-size: 0.85rem;
+}
+
+.whatsappFab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #25D366;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+  z-index: 1000;
+  transition: transform 0.3s;
+}
+
+.whatsappFab:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 900px) {
+  .footerContainer {
+    grid-template-columns: 1fr 1fr;
+  }
+  .featuresBar {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+  }
+  .instaGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+}

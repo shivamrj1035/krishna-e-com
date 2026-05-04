@@ -1,0 +1,129 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background: var(--bg-card);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.8rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.logoTitle {
+  font-size: 1.2rem;
+  color: var(--primary-navy);
+  letter-spacing: 1.5px;
+  line-height: 1;
+}
+
+.logoSubtitle {
+  font-size: 0.6rem;
+  color: var(--accent-gold);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.link {
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.link:hover, .activeLink {
+  color: var(--accent-gold);
+}
+
+.dropdownLink {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  cursor: pointer;
+}
+
+.dropdownIcon {
+  color: var(--text-dark);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.iconBtn {
+  background: transparent;
+  border: none;
+  color: var(--text-dark);
+  cursor: pointer;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconBtn:hover {
+  color: var(--accent-gold);
+}
+
+.cartBadge {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background: var(--primary-navy);
+  color: white;
+  font-size: 0.65rem;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.loginBtn {
+  background: var(--accent-gold);
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: opacity 0.3s;
+  margin-left: 0.3rem;
+}
+
+.loginBtn:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+  .links {
+    display: none;
+  }
+}
+
